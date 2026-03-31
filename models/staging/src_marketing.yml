@@ -1,0 +1,9 @@
+version: 1
+
+sources:
+  - name: ad_data
+    database: TEST_DB
+    schema: PUBLIC
+    tables:
+      - name: ads_insights_1166 # Facebook table
+      - name: google_ads_1163 # Google table
