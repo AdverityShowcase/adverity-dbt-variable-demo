@@ -1,7 +1,16 @@
-name: 'adverity'
+name: 'adverity_variable_demo'
 version: '1.0.0'
 profile: adverity
+model-paths: ["models"]
+
+# Define our variables here
+vars:
+  ad_tax_rate: 0.20  # Default 20% tax
+  agency_fee_percentage: 0.05 # Default 5% agency fee
+
 models:
-  adverity:
-    testing:
-      +materialized: view
+  advanced_marketing_demo:
+    staging:
+      materialized: view
+    marts:
+      materialized: table
